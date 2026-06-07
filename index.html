@@ -11,12 +11,13 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
 background:#f7f9f8;
 color:#222;
+line-height:1.6;
 }
 
 header{
@@ -26,6 +27,7 @@ padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+flex-wrap:wrap;
 }
 
 header h1{
@@ -40,10 +42,10 @@ font-weight:bold;
 }
 
 .hero{
-padding:80px 8%;
-text-align:center;
 background:linear-gradient(to right,#0f7b42,#18a558);
 color:white;
+padding:80px 8%;
+text-align:center;
 }
 
 .hero h2{
@@ -52,9 +54,9 @@ margin-bottom:20px;
 }
 
 .hero p{
-font-size:20px;
 max-width:700px;
 margin:auto;
+font-size:20px;
 }
 
 .btn{
@@ -86,18 +88,32 @@ gap:25px;
 
 .card{
 background:white;
-padding:25px;
 border-radius:15px;
+overflow:hidden;
 box-shadow:0 3px 12px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
 }
 
 .card h3{
 margin-bottom:10px;
+}
+
+.card h3 a{
+text-decoration:none;
 color:#0f7b42;
 }
 
 .card p{
-line-height:1.6;
+color:#555;
 }
 
 .benefits{
@@ -110,26 +126,44 @@ gap:25px;
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
 text-align:center;
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
+}
+
+.faq-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
+max-width:900px;
+margin:auto;
 }
 
 footer{
 background:#0f7b42;
 color:white;
-text-align:center;
 padding:30px;
-margin-top:50px;
+text-align:center;
 }
 
-.ad-box{
-background:#fff3cd;
-border:2px dashed #e0b000;
-padding:20px;
-margin:40px auto;
+footer a{
+color:white;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.hero h2{
+font-size:34px;
+}
+
+header{
+flex-direction:column;
 text-align:center;
-border-radius:10px;
-max-width:800px;
+}
+
+nav{
+margin-top:15px;
+}
 }
 </style>
 </head>
@@ -137,150 +171,122 @@ max-width:800px;
 <body>
 
 <header>
-<h1>Protein Smoothie Hub</h1>
+<h1>🥤 Protein Smoothie Hub</h1>
+
 <nav>
-<a href="#">Home</a>
-<a href="#">Recipes</a>
-<a href="#">Benefits</a>
-<a href="#">Contact</a>
+<a href="index.html">Home</a>
+<a href="#recipes">Recipes</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
 <h2>High Protein Smoothies For Muscle Growth</h2>
+
 <p>
-Discover delicious protein smoothie recipes for fitness,
-muscle gain, recovery, and healthy living.
+Discover delicious protein smoothie recipes designed for muscle gain,
+fitness recovery, healthy breakfasts and active lifestyles.
 </p>
+
 <a href="#recipes" class="btn">Explore Recipes</a>
 </section>
 
-<div class="ad-box">
-Monetag Ad Placement Area
-</div>
-
 <section class="section" id="recipes">
+
 <h2 class="section-title">Featured Protein Smoothies</h2>
 
+<div class="recipes">
+
 <div class="card">
-<img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=600"
-style="width:100%;border-radius:10px;">
+<img src="Chocolate-Oatmeal-Smoothie_13_WEB-e1739032266618.jpg">
 
-<h3>
-<a href="mango-protein-smoothie.html">
-Mango Protein Smoothie
-</a>
-</h3>
-
-<p>
-Fresh mango, milk, yogurt and protein powder.
-32g protein per serving.
-</p>
+<div class="card-content">
+<h3><a href="chocolate-oat-smoothie.html">Chocolate Oat Protein Smoothie</a></h3>
+<p>35g protein • Rich chocolate flavor • Perfect for muscle gain.</p>
 </div>
+</div>
+
 <div class="card">
+<img src="Peanut-Butter-Banana-Smoothie-recipe.jpg">
 
-<img src="Chocolate-Oatmeal-Smoothie_13_WEB-e1739032266618.jpg"
-style="width:100%;border-radius:10px;">
-
-<h3>
-<a href="chocolate-oat-smoothie.html">
-Chocolate Oat Protein Smoothie
-</a>
-</h3>
-
-<p>
-A rich blend of chocolate protein powder, oats, banana, and milk.
-Approx. 35g protein per serving.
-Perfect for muscle gain and post-workout recovery.
-</p>
-
+<div class="card-content">
+<h3><a href="peanut-butter-banana-smoothie.html">Peanut Butter Banana Smoothie</a></h3>
+<p>38g protein • High calories • Great for bulking.</p>
 </div>
+</div>
+
 <div class="card">
+<img src="Berry-Protein-Smoothie-3.jpg">
 
-<img src="Peanut-Butter-Banana-Smoothie-recipe.jpg"
-style="width:100%;border-radius:10px;">
-
-<h3>
-<a href="peanut-butter-banana-smoothie.html">
-Peanut Butter Banana Protein Smoothie
-</a>
-</h3>
-<p>
-A creamy blend of banana, peanut butter, milk, and protein powder.
-Approx. 38g protein per serving.
-Perfect for muscle gain, recovery, and a filling breakfast.
-</p>
-
+<div class="card-content">
+<h3><a href="berry-protein-smoothie.html">Berry Protein Smoothie</a></h3>
+<p>30g protein • Antioxidant rich • Great recovery smoothie.</p>
 </div>
+</div>
+
 <div class="card">
+<img src="mango.jpg">
 
-<img src="Berry-Protein-Smoothie-3.jpg"
-style="width:100%;border-radius:10px;">
-
-<h3>
-<a href="berry-protein-smoothie.html">
-Berry Protein Smoothie
-</a>
-</h3>
-
-<p>
-A refreshing blend of mixed berries, Greek yogurt, milk, and protein powder.
-Approx. 30g protein per serving.
-Rich in antioxidants and perfect for post-workout recovery.
-</p>
-
+<div class="card-content">
+<h3><a href="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=600 ">Mango Protein Smoothie</a></h3>
+<p>32g protein • Refreshing tropical flavor • Perfect breakfast smoothie.</p>
 </div>
 </div>
+
+</div>
+
 </section>
 
 <section class="section">
 
-<h2 class="section-title">Why Our Smoothies?</h2>
+<h2 class="section-title">Why Choose Protein Smoothies?</h2>
 
 <div class="benefits">
 
 <div class="benefit">
-<h3>High Protein</h3>
-<p>Supports muscle growth and recovery.</p>
+<h3>💪 Muscle Growth</h3>
+<p>High protein content helps support muscle building and recovery.</p>
 </div>
 
 <div class="benefit">
-<h3>Easy Recipes</h3>
-<p>Simple ingredients and quick preparation.</p>
+<h3>⚡ Quick Energy</h3>
+<p>Great for breakfast, pre-workout fuel and post-workout recovery.</p>
 </div>
 
 <div class="benefit">
-<h3>Healthy Lifestyle</h3>
-<p>Nutritious smoothies for daily health.</p>
+<h3>🥗 Healthy Nutrition</h3>
+<p>Easy way to add protein, vitamins and nutrients to your diet.</p>
 </div>
 
 </div>
 
 </section>
-<div class="ad-box">
-Second Monetag Ad Placement Area
-</div>
 
 <section class="section">
+
 <h2 class="section-title">Frequently Asked Questions</h2>
 
-<div class="card">
+<div class="faq-card">
+
 <h3>When should I drink a protein smoothie?</h3>
-<p>Post-workout, breakfast, or as a healthy snack.</p>
+<p>Breakfast, post-workout, or as a healthy snack.</p>
 
 <br>
 
 <h3>Can protein smoothies help muscle gain?</h3>
-<p>Yes, when combined with proper training and nutrition.</p>
+<p>Yes. Combined with strength training and proper nutrition, they can help support muscle growth.</p>
 
 <br>
 
-<h3>Can vegetarians use protein smoothies?</h3>
-<p>Absolutely. Plant-based protein powders work great.</p>
+<h3>Are protein smoothies healthy?</h3>
+<p>Yes. They can provide protein, vitamins, minerals and healthy calories.</p>
+
 </div>
+
 </section>
 
-<footer style="background:#0f7b42;color:white;padding:30px;text-align:center;margin-top:50px;">
+<footer>
 
 <h3>Protein Smoothie Hub</h3>
 
@@ -289,6 +295,8 @@ Discover delicious high-protein smoothie recipes for fitness,
 muscle gain and healthy living.
 </p>
 
+<br>
+
 <p>
 <a href="index.html">Home</a> |
 <a href="about.html">About</a> |
@@ -296,10 +304,13 @@ muscle gain and healthy living.
 <a href="privacy-policy.html">Privacy Policy</a>
 </p>
 
+<br>
+
 <p>© 2026 Protein Smoothie Hub</p>
 
 </footer>
+
 <script src="https://quge5.com/88/tag.min.js" data-zone="247100" async data-cfasync="false"></script>
 
 </body>
-  </html>
+</html>
