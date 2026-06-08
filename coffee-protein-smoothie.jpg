@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Protein Smoothie</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+max-width: 900px;
+margin:auto;
+padding:20px;
+background:#f5f5f5;
+line-height:1.6;
+}
+
+nav{
+text-align:center;
+margin-bottom:20px;
+}
+
+nav a{
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+color:#333;
+}
+
+.hero{
+background:white;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero img{
+width:100%;
+max-width:500px;
+border-radius:12px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.back-btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 15px;
+background:#6f4e37;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+<h1>☕ Coffee Protein Smoothie</h1>
+
+<p>
+A creamy coffee smoothie packed with protein and natural energy.
+Perfect for breakfast, pre-workout fuel, and busy mornings.
+</p>
+
+<img src="coffee-protein-smoothie.jpg" alt="Coffee Protein Smoothie">
+</div>
+
+<div class="card">
+<h2>Ingredients</h2>
+
+<ul>
+<li>1 shot espresso or ½ cup cold coffee</li>
+<li>1 scoop vanilla or chocolate protein powder</li>
+<li>1 banana</li>
+<li>1 cup milk</li>
+<li>4-5 ice cubes</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Nutrition (Approx.)</h2>
+
+<ul>
+<li>Protein: 34g</li>
+<li>Calories: 360</li>
+<li>Carbohydrates: 30g</li>
+<li>Fat: 6g</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Instructions</h2>
+
+<ol>
+<li>Prepare and cool the coffee.</li>
+<li>Add coffee, banana, milk and protein powder to a blender.</li>
+<li>Blend until smooth.</li>
+<li>Add ice cubes and blend again.</li>
+<li>Serve chilled.</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>Benefits</h2>
+
+<ul>
+<li>Provides natural caffeine energy</li>
+<li>High in protein for muscle recovery</li>
+<li>Perfect pre-workout drink</li>
+<li>Quick and filling breakfast option</li>
+</ul>
+</div>
+
+<a class="back-btn" href="index.html">← Back to Home</a>
+
+<script src="https://quge5.com/88/tag.min.js" data-zone="247100" async data-cfasync="false"></script>
+
+</body>
+</html>
